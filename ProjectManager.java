@@ -1,15 +1,20 @@
 package com.timurradko.itCompany;
 
-public class ProjectManager extends ProjectWorker implements MakeCoffee, Managing {
-    public String name = "Project Manager";
+public class ProjectManager extends ProjectWorker implements Manager {
+    public String name;
 
     protected ProjectManager() {
-        super(ITWorkerType.SENIOR);
+        super();
+        this.name = getName();
+    }
+
+    private String getName() {
+        return "Project Manager";
     }
 
     @Override
-    public void managing() {
-        System.out.println("I'm managing the Project");
+    public void manage() {
+        System.out.println("After I drink coffee, I will manage the Project");
     }
 
     @Override

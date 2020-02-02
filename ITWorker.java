@@ -1,14 +1,15 @@
 package com.timurradko.itCompany;
 
-public abstract class ITWorker implements MakeCoffee {
+public abstract class ITWorker implements CoffeeMaker {
     protected boolean coffee;
 
-    protected ITWorker(boolean coffee) {
+    protected ITWorker() {
         this.coffee = false;
     }
 
     @Override
     public void makeCoffee() {
-        System.out.println("I'm making coffee");
+        System.out.print("- I made coffee! ");
+        coffee = true;
     }
 }

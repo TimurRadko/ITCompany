@@ -1,15 +1,15 @@
 package com.timurradko.itCompany;
 
-public abstract class QATester extends ProjectWorker implements MakeCoffee, Testing{
+public abstract class QATester extends ProjectWorker implements Tester {
     public String name = "QA Tester";
 
-    protected QATester(ITWorkerType typeWorker) {
-        super(ITWorkerType.MIDDLE);
+    protected QATester() {
+        super();
     }
 
     @Override
-    public void testing() {
-        System.out.println("I'm testing the program, that Developer wrote");
+    public void test() {
+        System.out.println("After I drink coffee, I will test our program");
     }
 
     @Override

@@ -1,19 +1,19 @@
 package com.timurradko.itCompany;
 
-public class TeamLead extends ProjectWorker implements MakeCoffee, Managing, Developing {
+public class TeamLead extends ProjectWorker implements Manager, Developer {
     public String name = "Team Lead";
 
     protected TeamLead() {
-        super(ITWorkerType.SENIOR);
+        super();
     }
 
     @Override
-    public void managing() {
-        System.out.println("I'm managing the Project such a TeamLead");
+    public void manage() {
+        System.out.println("After I drink coffee, I will manage the Project");
     }
     @Override
-    public void developing() {
-        System.out.println("I'm developing the Project such a TeamLead");
+    public void develop() {
+        System.out.println("After I drink coffee, I will develop our program");
     }
 
     @Override

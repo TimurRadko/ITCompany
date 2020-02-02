@@ -1,5 +1,5 @@
 package com.timurradko.itCompany;
 
-public interface MakeCoffee {
+public interface CoffeeMaker {
     void makeCoffee();
 }

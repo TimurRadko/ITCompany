@@ -1,15 +1,34 @@
 package com.timurradko.itCompany;
 
-public class ProjectDeveloper extends ProjectWorker implements MakeCoffee, Developing {
-    public String name = "Project Developer";
+public class ProjectDeveloper extends ProjectWorker implements Developer {
+    public String name;
+    protected ITWorkerType workerType;
 
-    protected ProjectDeveloper() {
-        super(ITWorkerType.MIDDLE);
+    protected ProjectDeveloper(ITWorkerType workerType) {
+        super();
+        setName(workerType);
+        this.name = getName();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    private void setName(ITWorkerType workerType) {
+        if (workerType == ITWorkerType.JUNIOR) {
+            this.name = "Junior Developer";
+        }
+        if (workerType == ITWorkerType.MIDDLE) {
+            this.name = "Middle Developer";
+        }
+        if (workerType == ITWorkerType.SENIOR) {
+            this.name = "Senior Developer";
+        }
     }
 
     @Override
-    public void developing() {
-        System.out.println("I'm developing the program");
+    public void develop() {
+        System.out.println("After I drink coffee, I will develop our program");
     }
 
     @Override

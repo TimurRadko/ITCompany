@@ -1,14 +1,15 @@
 package com.timurradko.itCompany;
 
-public class QAManualTester extends QATester implements MakeCoffee, Testing {
+public class QAManualTester extends QATester{
     public String name = "QA Manual Tester";
 
-    protected QAManualTester() {
-        super(ITWorkerType.MIDDLE);
+    protected QAManualTester(String name) {
+        super();
+        this.name = name;
     }
 
     @Override
-    public void testing() {
+    public void test() {
         System.out.println("I'm testing the program, that Developer wrote manually");
     }
 

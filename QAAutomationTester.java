@@ -1,15 +1,16 @@
 package com.timurradko.itCompany;
 
-public class QAAutomationTester extends QATester implements MakeCoffee, Testing {
-    public String name = "QA Automation Tester";
+public class QAAutomationTester extends QATester{
+    public String name;
 
     protected QAAutomationTester() {
-        super(ITWorkerType.MIDDLE);
+        super();
+        this.name = "QA Automation Tester";
     }
 
     @Override
-    public void testing() {
-        System.out.println("I'm testing the program, that Developer wrote automatically");
+    public void test() {
+        System.out.println("After I drink coffee, I will test the program automatically");
     }
 
     @Override
