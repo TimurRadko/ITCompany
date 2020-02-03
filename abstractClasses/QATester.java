@@ -1,4 +1,6 @@
-package com.timurradko.itCompany;
+package com.timurradko.itCompany.abstractClasses;
+
+import com.timurradko.itCompany.interfacesITWorkers.Tester;
 
 public abstract class QATester extends ProjectWorker implements Tester {
     public String name = "QA Tester";

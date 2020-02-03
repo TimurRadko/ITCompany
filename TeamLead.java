@@ -1,5 +1,9 @@
 package com.timurradko.itCompany;
 
+import com.timurradko.itCompany.abstractClasses.ProjectWorker;
+import com.timurradko.itCompany.interfacesITWorkers.Developer;
+import com.timurradko.itCompany.interfacesITWorkers.Manager;
+
 public class TeamLead extends ProjectWorker implements Manager, Developer {
     public String name = "Team Lead";
 

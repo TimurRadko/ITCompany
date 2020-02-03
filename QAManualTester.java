@@ -1,6 +1,8 @@
 package com.timurradko.itCompany;
 
-public class QAManualTester extends QATester{
+import com.timurradko.itCompany.abstractClasses.QATester;
+
+public class QAManualTester extends QATester {
     public String name = "QA Manual Tester";
 
     protected QAManualTester(String name) {

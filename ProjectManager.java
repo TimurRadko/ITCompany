@@ -1,5 +1,8 @@
 package com.timurradko.itCompany;
 
+import com.timurradko.itCompany.abstractClasses.ProjectWorker;
+import com.timurradko.itCompany.interfacesITWorkers.Manager;
+
 public class ProjectManager extends ProjectWorker implements Manager {
     public String name;
 

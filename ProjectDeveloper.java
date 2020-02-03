@@ -1,5 +1,8 @@
 package com.timurradko.itCompany;
 
+import com.timurradko.itCompany.abstractClasses.ProjectWorker;
+import com.timurradko.itCompany.interfacesITWorkers.Developer;
+
 public class ProjectDeveloper extends ProjectWorker implements Developer {
     public String name;
     protected ITWorkerType workerType;

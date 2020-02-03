@@ -1,5 +1,8 @@
 package com.timurradko.itCompany;
 
+import com.timurradko.itCompany.abstractClasses.ITWorker;
+import com.timurradko.itCompany.abstractClasses.QATester;
+
 public class Project {
     private ITWorker[] itWorkers;
 

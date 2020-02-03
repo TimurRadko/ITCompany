@@ -1,9 +1,11 @@
-package com.timurradko.itCompany;
+package com.timurradko.itCompany.abstractClasses;
+
+import com.timurradko.itCompany.CoffeeMaker;
 
 public abstract class ITWorker implements CoffeeMaker {
-    protected boolean coffee;
+    public boolean coffee;
 
-    protected ITWorker() {
+    public ITWorker() {
         this.coffee = false;
     }
 

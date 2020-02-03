@@ -1,6 +1,8 @@
 package com.timurradko.itCompany;
 
-public class QAAutomationTester extends QATester{
+import com.timurradko.itCompany.abstractClasses.QATester;
+
+public class QAAutomationTester extends QATester {
     public String name;
 
     protected QAAutomationTester() {
