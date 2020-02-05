@@ -5,8 +5,8 @@ import com.timurradko.itCompany.CoffeeMaker;
 public abstract class ITWorker implements CoffeeMaker {
     public boolean coffee;
 
-    public ITWorker() {
-        this.coffee = false;
+    public ITWorker(boolean coffee) {
+        this.coffee = coffee;
     }
 
     @Override

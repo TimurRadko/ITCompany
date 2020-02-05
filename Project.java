@@ -4,7 +4,7 @@ import com.timurradko.itCompany.abstractClasses.ITWorker;
 import com.timurradko.itCompany.abstractClasses.QATester;
 
 public class Project {
-    private ITWorker[] itWorkers;
+    public ITWorker[] itWorkers;
 
     public Project(ITWorker... itWorkers) {
         this.itWorkers = itWorkers;
@@ -29,29 +29,24 @@ public class Project {
 
     }
 
-    public static void workingDay(ITWorker[] itWorkers) {
+    public void workingDay(ITWorker[] itWorkers) {
 
         for (ITWorker itWorker : itWorkers) {
             if (itWorker instanceof ITWorker && !(itWorker instanceof Trainee)) {
-                CoffeeMaker coffeeMaker = (CoffeeMaker) itWorker;
-                coffeeMaker.makeCoffee();
+                ((CoffeeMaker) itWorker).makeCoffee();
                 if (itWorker.coffee) {
                     System.out.println("- Thank you! - answered " + itWorker + ".");
                     if (itWorker instanceof ProjectManager) {
-                        ProjectManager projectManager = (ProjectManager) itWorker;
-                        projectManager.manage();
+                        ((ProjectManager) itWorker).manage();
                     }
                     if (itWorker instanceof TeamLead) {
-                        TeamLead teamLead = (TeamLead) itWorker;
-                        teamLead.manage();
+                        ((TeamLead) itWorker).manage();
                     }
                     if (itWorker instanceof ProjectDeveloper) {
-                        ProjectDeveloper projectDeveloper = (ProjectDeveloper) itWorker;
-                        projectDeveloper.develop();
+                        ((ProjectDeveloper) itWorker).develop();
                     }
                     if (itWorker instanceof QATester) {
-                        QATester qaTester = (QATester) itWorker;
-                        qaTester.test();
+                        ((QATester) itWorker).test();
                     }
                 }
             }
