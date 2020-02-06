@@ -9,7 +9,7 @@ public class ProjectDeveloper extends ProjectWorker implements Developer {
 
     protected ProjectDeveloper(ITWorkerType workerType) {
         super();
-        setName(workerType);
+        this.workerType = workerType;
         this.name = getName();
     }
 
